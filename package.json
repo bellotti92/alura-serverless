@@ -1,0 +1,24 @@
+{
+  "name": "alura-sls-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "dependencies": {},
+  "devDependencies": {
+    "serverless-offline": "^8.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/bellotti92/alura-sls-framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bellotti92/alura-sls-framework/issues"
+  },
+  "homepage": "https://github.com/bellotti92/alura-sls-framework#readme"
+}

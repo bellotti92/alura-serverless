@@ -2,6 +2,9 @@ service: cadastro-pacientes
 
 frameworkVersion: "2"
 
+plugins:
+  - serverless-offline
+
 provider:
   name: aws
   runtime: nodejs12.x
@@ -14,3 +17,15 @@ provider:
 functions:
   listarPacientes:
     handler: handler.listarPacientes
+    events:
+      - http:
+          path: pacientes
+          method: get
+  obterPaciente:
+    handler: handler.obterPaciente
+    events:
+      - http:
+          path: pacientes/{pacienteId}
+          method: get
+# handler: função dentro do arquivo handler.js que será chamada
+# events : cria uma requisição http dentro do API Gateway com o método e a URL informada no path. ex.: ../pacientes/
